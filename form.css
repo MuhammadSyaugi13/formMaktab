@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.container{
+    background-color: #fff;
+}
+
+.relatif{
+    position: relative;
+    width: 100%;
+
+}
+
+.formView{
+    width: 100%;
+}
+
+.namaPemohon{
+    position: absolute;
+    top: 23.6%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    /* background-color: rgb(212, 127, 127); */
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .namaPemohon{
+        font-size: 1.2vw;
+    }
+}
