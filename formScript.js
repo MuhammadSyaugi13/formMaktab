@@ -19,31 +19,31 @@ function valueInput() {
     document.querySelector('.np-hidden').setAttribute("value",data.nama);
 
     // nama-saudara
-    document.querySelector('.sdr-kandung-inp').innerHTML = data.namaSdr;
+    document.querySelector('.sdrAyah').innerHTML = data.namaSdr;
     document.querySelector('.nsdr-hidden').setAttribute("value",data.namaSdr);
 
     // nama-saudara Ayah
-    document.querySelector('.sdr-ayah-inp').innerHTML = data.namaSdrAyah;
+    document.querySelector('.sdrAyah').innerHTML = data.namaSdrAyah;
     document.querySelector('.nSdrAyah-hidden').setAttribute("value",data.namaSdrAyah);
 
 // nama-saudara kakek <- dari sini
-    document.querySelector('.sdr-kakek-inp').innerHTML = data.namaSdrKakek;
+    document.querySelector('.sdrKakek').innerHTML = data.namaSdrKakek;
     document.querySelector('.nSdrKakek-hidden').setAttribute("value",data.namaSdrKakek);
 
     // qabilah
-    document.querySelector('.qabilah-inp').innerHTML = data.qabilah;
+    document.querySelector('.marga').innerHTML = data.qabilah;
     document.querySelector('.qbl-hidden').setAttribute("value",data.qabilah);
 
     // ttl
-    document.querySelector('.ttl-inp').innerHTML = data.ttl;
+    document.querySelector('.tmptl').innerHTML = data.ttl;
     document.querySelector('.ttl-hidden').setAttribute("value",data.ttl);
 
     // alamat
-    document.querySelector('.alamat-inp').innerHTML = data.alamat;
+    document.querySelector('.almt').innerHTML = data.alamat;
     document.querySelector('.alamat-hidden').setAttribute("value",data.alamat);
 
     // nama Anak
-    document.querySelector('.namaAnak-inp').innerHTML = data.namaAnak;
+    document.querySelector('.nmAnak').innerHTML = data.namaAnak;
     document.querySelector('.nAnak-hidden').setAttribute("value",data.namaAnak);
 
 
