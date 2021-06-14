@@ -18,19 +18,81 @@ body{
 
 .namaPemohon{
     position: absolute;
-    top: 23.6%;
+    top: 18.9%;
+    width: 64%;
     line-height: 2.4vw;
     left: 23%;
     font-weight: bolder;
     font-size: 1.5vw;
-    /* background-color: rgb(212, 127, 127); */
 }
 
-
-
-
-@media screen and (max-width: 991px) {
-    .namaPemohon{
-        font-size: 1.5vw;
-    }
+.sdr{
+    position: absolute;
+    top: 23.6%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
 }
+
+.sdrAyah{
+    position: absolute;
+    top: 27.8%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+.sdrKakek{
+    position: absolute;
+    top: 32.8%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+.marga{
+    position: absolute;
+    top: 38.1%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+.tmptl{
+    position: absolute;
+    top: 41.3%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+.almt{
+    position: absolute;
+    top: 45.1%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+.nmAnak{
+    position: absolute;
+    top: 48.4%;
+    width: 64%;
+    line-height: 2.4vw;
+    left: 23%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
