@@ -40,7 +40,7 @@
             </div>
             <div class="col-md-9 ">
 
-                <textarea name="nama-pemohon" type="text" class="form-control  border-2 shadow-sm" id="namaPemohon" cols="30" rows="2"></textarea>
+                <textarea name="nama-pemohon" type="text" class="form-control nama-pemohon-inp border-2 shadow-sm" id="namaPemohon" cols="30" rows="2"></textarea>
 
                 <div id="emailHelp" class="form-text text-dark">~ Masukan sampai Kakek ke-5. <span class="cth-nama-pemohon"> *Cth : Muhammad / Ahmad / Ali / Isa / Husein / Abubakar / Syech </span></div>
             </div>
@@ -54,7 +54,7 @@
             </div>
             <div class="col-md-9 ">
                 <!-- <input name="sdr-kandung" type="text" class="form-control  border-2 shadow-sm" id="sdr-kandung"> -->
-                <textarea name="sdr-kandung" type="text" class="form-control  border-2 shadow-sm" id="sdr-kandung" cols="30" rows="2">Syaugi</textarea>
+                <textarea name="sdr-kandung" type="text" class="form-control sdr-kandung-inp border-2 shadow-sm" id="sdr-kandung" cols="30" rows="2">Syaugi</textarea>
 
                 <div id="emailHelp" class="form-text text-dark">Laki & Perempuan</div>
             </div>
@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-9 ">
                 <!-- <input name="sdr-ayah" type="text" class="form-control  border-2 shadow-sm" id="sdr-ayah"> -->
-                <textarea name="sdr-ayah" type="text" class="form-control  border-2 shadow-sm" id="sdr-ayah" cols="30" rows="2"></textarea>
+                <textarea name="sdr-ayah" type="text" class="form-control sdr-ayah-inp border-2 shadow-sm" id="sdr-ayah" cols="30" rows="2"></textarea>
 
                 <div id="emailHelp" class="form-text text-dark">~ Laki & Perempuan</div>
             </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-9 ">
                 <!-- <input name="sdr-kakek" type="text" class="form-control  border-2 shadow-sm" id="sdr-kakek"> -->
-                <textarea name="sdr-kakek" type="text" class="form-control  border-2 shadow-sm" id="sdr-kakek" cols="30" rows="2"></textarea>
+                <textarea name="sdr-kakek" type="text" class="form-control sdr-kakek-inp border-2 shadow-sm" id="sdr-kakek" cols="30" rows="2"></textarea>
 
                 <div id="emailHelp" class="form-text text-dark">~ kakek dari Ayah, Laki & Perempuan</div>
 
@@ -96,7 +96,7 @@
                 <label for="qabilah" class="form-label"> <b> Qabilah</b></label>
             </div>
             <div class="col-md-9 ">
-                <input name="qabilah" type="text" class="form-control  border-2 shadow-sm" id="qabilah">
+                <input name="qabilah" type="text" class="form-control qabilah-inp border-2 shadow-sm" id="qabilah">
 
                 <div id="emailHelp" class="form-text text-dark">~ Wajib Qabilah yang termasuk kalangan Alawiyin</div>
 
@@ -110,7 +110,7 @@
                 <label for="ttl" class="form-label"> <b> Tempat & Tgl. Lahir</b></label>
             </div>
             <div class="col-md-9 ">
-                <input name="ttl" type="text" class="form-control  border-2 shadow-sm" id="ttl">
+                <input name="ttl" type="text" class="form-control ttl-inp border-2 shadow-sm" id="ttl">
 
                 <div id="emailHelp" class="form-text text-dark">~ *Cth : Jakarta, 13 Agustus 1999 </div>
 
@@ -125,7 +125,7 @@
             </div>
             <div class="col-md-9 ">
                 <!-- <input name="alamat" type="text" class="form-control  border-2 shadow-sm" id="alamat"> -->
-                <textarea name="alamat" type="text" class="form-control  border-2 shadow-sm" id="alamat" cols="30" rows="2"></textarea>
+                <textarea name="alamat" type="text" class="form-control alamat-inp border-2 shadow-sm" id="alamat" cols="30" rows="2"></textarea>
 
                 <div id="emailHelp" class="form-text text-dark">~ Domisili</div>
 
@@ -140,7 +140,7 @@
             </div>
             <div class="col-md-9 ">
                 <!-- <input name="nama-anak" type="text" class="form-control  border-2 shadow-sm" id="nama-anak"> -->
-                <textarea name="nama-anak" type="text" class="form-control  border-2 shadow-sm" id="nama-anak" cols="30" rows="2"></textarea>
+                <textarea name="nama-anak" type="text" class="form-control namaAnak-inp border-2 shadow-sm" id="nama-anak" cols="30" rows="2"></textarea>
 
                 <div id="emailHelp" class="form-text text-dark">~ Kandung, laki & perempuan</div>
 
@@ -150,7 +150,7 @@
                 <!-- <button type="submit" name="view" class="btn btn-warning mt-5">Lihat Formulir</button> -->
                 <!-- Button trigger modal -->
                 <!-- <button onclick="ambilNama()">Ambil</button> -->
-                <button type="submit" name="view" class="btn btn-warning mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="submit" name="view" class="btn btn-warning mt-5 view" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="valueInput()">
                     Lihat
                 </button>
                 <button type="submit" name="download" class="btn btn-primary mt-5">Download Formulir</button>
@@ -182,34 +182,57 @@
                     <div class="relatif">
                         <img src="FormulirNasab2.png" id="gambarForm" class="formView" alt="">
                         <!-- nama Pemohon -->
-                        <div class="namaPemohon"> Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi</div>
+                        <div class="namaPemohon"></div>
 
                         <!-- nama sdr -->
-                        <div class="sdr"> Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi</div>
+                        <div class="sdr"></div>
 
                         <!-- nama sdr ayah -->
-                        <div class="sdrAyah"> Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi</div>
+                        <div class="sdrAyah"> </div>
 
                         <!-- nama sdr kakek -->
-                        <div class="sdrKakek"> Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi</div>
+                        <div class="sdrKakek"> </div>
 
                         <!-- qabilah -->
-                        <div class="marga"> Muhammad Syaugi Muhammad </div>
+                        <div class="marga">  </div>
 
                         <!-- ttl -->
-                        <div class="tmptl"> Muhammad Syaugi Muhammad Syaugi Muhammad</div>
+                        <div class="tmptl"> </div>
 
                         <!-- nama alamat -->
-                        <div class="almt"> Muhammad Syaugi Muhammad Syaugi Muhammad</div>
+                        <div class="almt"></div>
 
                         <!-- nama nama anak -->
-                        <div class="nmAnak"> Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi Muhammad Syaugi</div>
+                        <div class="nmAnak"></div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
+
+<!-- hidden input untuk mengirim data ke backend -->
+
+                    <form action="<?= base_url('Home/cetak') ?>">
+                        
+                    <input type="hidden" class="np-hidden" value="" name="nama-pemohon">
+
+                    <input type="hidden" value="" class="nsdr-hidden" name="sdr-kandung">
+
+                    <input type="hidden" value="" class="nSdrAyah-hidden" name="sdr-ayah"                    >
+
+                    <input type="hidden" value="" class="nSdrKakek-hidden" name="sdr-kakek">
+
+                    <input type="hidden" value="" class="qbl-hidden" name="qabilah">
+
+                    <input type="hidden" value="" class="ttl-hidden" name="ttl">
+
+                    <input type="hidden" value="" class="alamat-hidden" name="ttl">
+
+                    <input type="hidden" value="" class="nAnak-hidden" name="ttl">   
+
+
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="submit" name="download" class="btn btn-primary">Download</button>
+                    </form>
                 </div>
             </div>
         </div>
