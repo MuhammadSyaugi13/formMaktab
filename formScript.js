@@ -54,7 +54,7 @@ const width = window.innerWidth;
 
 
 // jika lebar device < 400
-if (width < 400) {
+if (width < 800) {
 
 // logic dibawa ini untuk menghapus tag form pada hal html agar ketika disubmit pada mobile, data2nya tidak dikirim ke class php
     let form1 = document.querySelector('.formulir1');
